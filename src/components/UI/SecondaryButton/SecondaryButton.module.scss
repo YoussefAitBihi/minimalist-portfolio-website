@@ -1,0 +1,30 @@
+@import "../../../styles/abstracts/variables";
+@import "../../../styles/abstracts/mixins";
+
+.secondary-button {
+  &:where(:link, :visited) {
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+    padding: 1em 2.5em;
+    font-size: $fs-300;
+    color: $clr-primary-blue-400;
+    letter-spacing: $ls-400;
+    border: 1px solid currentColor;
+    cursor: pointer;
+  }
+
+  &:where(:hover, :focus) {
+    background-color: $clr-primary-blue-400;
+    color: $clr-white;
+  }
+
+  &[aria-disabled="true"] {
+    background-color: $clr-white;
+    border-color: $clr-grey-300;
+    cursor: not-allowed;
+  }
+}

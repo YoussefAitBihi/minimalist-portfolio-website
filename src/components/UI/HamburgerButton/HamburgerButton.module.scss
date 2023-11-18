@@ -1,0 +1,19 @@
+@import "../../../styles/abstracts/mixins";
+
+.hamburger-button {
+  &[aria-expanded="false"] ~ ul {
+    display: none;
+  }
+
+  &[aria-expanded="true"] ~ ul {
+    display: block;
+  }
+
+  @include respond-to("tablet") {
+    display: none;
+
+    &[aria-expanded] ~ ul {
+      display: flex;
+    }
+  }
+}

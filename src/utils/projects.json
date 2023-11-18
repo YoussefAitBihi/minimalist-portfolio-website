@@ -1,0 +1,67 @@
+{
+  "p1": {
+    "id": "p1",
+    "title": "Fullstack E-commerce Shopping Cart",
+    "description": "Ce projet met en avant mon expertise dans le développement d'une plateforme e-commerce multipage et responsive en utilisant des technologies web modernes telles que HTML, CSS, React, React Router DOM, Redux, Redux Toolkit et Supabase.",
+    "images": {
+      "desktop": {
+        "1x": "/src/assets/images/portfolio/desktop/image-portfolio-bookmark.jpg",
+        "2x": "/src/assets/images/portfolio/desktop/image-portfolio-bookmark@2x.jpg"
+      },
+      "tablet": {
+        "1x": "/src/assets/images/portfolio/tablet/image-portfolio-bookmark.jpg",
+        "2x": "/src/assets/images/portfolio/tablet/image-portfolio-bookmark@2x.jpg"
+      },
+      "mobile": {
+        "1x": "/src/assets/images/portfolio/mobile/image-portfolio-bookmark.jpg",
+        "2x": "/src/assets/images/portfolio/mobile/image-portfolio-bookmark@2x.jpg"
+      }
+    },
+    "technologies": [
+      "HTML, CSS, SASS",
+      "React, React Router Dom",
+      "Redux, Redux Toolkit",
+      "Supabase BAAS"
+    ]
+  },
+  "p2": {
+    "id": "p2",
+    "title": "Space tourism multi-page website",
+    "description": "Ce projet met en avant mon expertise dans le développement d'une plateforme e-commerce multipage et responsive en utilisant des technologies web modernes telles que HTML, CSS, React, React Router DOM, Redux, Redux Toolkit et Supabase.",
+    "images": {
+      "desktop": {
+        "1x": "/src/assets/images/portfolio/desktop/image-portfolio-fylo.jpg",
+        "2x": "/src/assets/images/portfolio/desktop/image-portfolio-fylo@2x.jpg"
+      },
+      "tablet": {
+        "1x": "/src/assets/images/portfolio/tablet/image-portfolio-fylo.jpg",
+        "2x": "/src/assets/images/portfolio/tablet/image-portfolio-fylo@2x.jpg"
+      },
+      "mobile": {
+        "1x": "/src/assets/images/portfolio/mobile/image-portfolio-fylo.jpg",
+        "2x": "/src/assets/images/portfolio/mobile/image-portfolio-fylo@2x.jpg"
+      }
+    },
+    "technologies": ["HTML, CSS, SASS", "JS"]
+  },
+  "p3": {
+    "id": "p3",
+    "title": "Natours landing page",
+    "description": "Ce projet met en avant mon expertise dans le développement d'une plateforme e-commerce multipage et responsive en utilisant des technologies web modernes telles que HTML, CSS, React, React Router DOM, Redux, Redux Toolkit et Supabase.",
+    "images": {
+      "desktop": {
+        "1x": "/src/assets/images/portfolio/desktop/image-portfolio-insure.jpg",
+        "2x": "/src/assets/images/portfolio/desktop/image-portfolio-insure@2x.jpg"
+      },
+      "tablet": {
+        "1x": "/src/assets/images/portfolio/tablet/image-portfolio-insure.jpg",
+        "2x": "/src/assets/images/portfolio/tablet/image-portfolio-insure@2x.jpg"
+      },
+      "mobile": {
+        "1x": "/src/assets/images/portfolio/mobile/image-portfolio-insure.jpg",
+        "2x": "/src/assets/images/portfolio/mobile/image-portfolio-insure@2x.jpg"
+      }
+    },
+    "technologies": ["HTML, CSS, SASS", "JS"]
+  }
+}

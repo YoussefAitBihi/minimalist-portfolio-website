@@ -1,0 +1,76 @@
+@import "../../../styles/abstracts/variables";
+@import "../../../styles/abstracts/mixins";
+
+.primary-footer {
+  --_margin-footer: 3rem;
+
+  &__bottom {
+    background-color: $clr-primary-blue-400;
+    padding-block: 2.5rem;
+    text-align: center;
+  }
+
+  & path {
+    fill: $clr-white;
+  }
+
+  &__navigation {
+    text-align: center;
+  }
+
+  &__list {
+    margin-block: var(--_margin-footer);
+  }
+
+  &__logo-box {
+    display: block;
+    width: fit-content;
+    margin: auto;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__link {
+    &:where(:link, :visited) {
+      display: block;
+      color: $clr-white;
+      font-size: $fs-300;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: $ls-400;
+    }
+  }
+
+  &__social-media-list {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  @include respond-to("tablet") {
+    --_margin-footer: 0;
+
+    &__bottom > div {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+    }
+
+    &__navigation {
+      display: flex;
+      gap: 5rem;
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}

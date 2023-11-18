@@ -1,0 +1,21 @@
+@import "./variables";
+
+// Responsive Breakpoint Manager
+@mixin respond-to($breakpoint) {
+  $raw-query: map-get($available-breakpoints, $breakpoint);
+
+  // If raw-query exists
+  @if $raw-query {
+    $query: if(
+      type-of($raw-query) == "string",
+      unquote($raw-query),
+      inspect($raw-query)
+    );
+
+    @media only screen and #{$query} {
+      @content;
+    }
+  } @else {
+    @error "`#{$breakpoint}` doesn't exist. Make sure you have passed a valid breakpoint. Try to look at variables.scss";
+  }
+}

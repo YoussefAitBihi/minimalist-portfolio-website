@@ -1,0 +1,63 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+
+.section-introduction {
+  &__bg {
+    min-height: 70dvh;
+    background: no-repeat center/cover
+      url("../../assets/images/homepage/mobile/image-homepage-hero.jpg");
+  }
+
+  &__title {
+    font-family: $ff-secondary;
+    font-size: clamp($fs-800, calc(6vw + 1rem), $fs-900);
+    letter-spacing: $ls-200;
+    padding-block: $padding-400;
+  }
+
+  @include respond-to("tablet") {
+    position: relative;
+
+    &__bg {
+      background-image: url("../../assets/images/homepage/tablet/image-homepage-hero.jpg");
+    }
+
+    &__introduce {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: $clr-white;
+      width: 60ch;
+    }
+
+    &__title {
+      padding: $padding-700 $padding-700 $padding-700 0;
+    }
+  }
+
+  @include respond-to("desktop") {
+    &__bg {
+      background-image: url("../../assets/images/homepage/desktop/image-homepage-hero.jpg");
+    }
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    &__bg {
+      background-image: url("../../assets/images/homepage/mobile/image-homepage-hero@2x.jpg");
+    }
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: $bp-tablet),
+    (min-resolution: 192dpi) and (min-width: $bp-tablet) {
+    &__bg {
+      background-image: url("../../assets/images/homepage/tablet/image-homepage-hero@2x.jpg");
+    }
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: $bp-desktop),
+    (min-resolution: 192dpi) and (min-width: $bp-desktop) {
+    &__bg {
+      background-image: url("../../assets/images/homepage/desktop/image-homepage-hero@2x.jpg");
+    }
+  }
+}

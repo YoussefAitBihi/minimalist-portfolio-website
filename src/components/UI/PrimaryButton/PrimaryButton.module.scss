@@ -1,0 +1,39 @@
+@import "../../../styles/abstracts/variables";
+@import "../../../styles/abstracts/mixins";
+
+.primary-button {
+  &,
+  &:where(:link, :visited) {
+    background-color: $clr-primary-blue-700;
+    color: $clr-white;
+    font-size: $fs-300;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &:where(:hover, :focus) {
+    background-color: $clr-primary-cyan-400;
+  }
+
+  &:is(:hover, :focus) span:first-of-type {
+    background-color: $clr-primary-cyan-600;
+
+    & g {
+      stroke: $clr-white;
+    }
+  }
+
+  & > span:first-of-type {
+    padding: 1.4em;
+    background-color: $clr-primary-blue-800;
+  }
+
+  & > span:last-of-type {
+    padding-inline: 2.8em;
+  }
+}

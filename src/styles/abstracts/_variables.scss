@@ -1,0 +1,93 @@
+/* ------------------------ */
+/*          COLORS          */
+/* ------------------------ */
+$clr-primary-cyan-400: hsl(167, 36%, 54%);
+$clr-primary-cyan-600: hsl(168, 31%, 48%);
+
+$clr-primary-blue-800: hsl(205, 40%, 19%);
+$clr-primary-blue-700: hsl(205, 41%, 21%);
+$clr-primary-blue-400: hsl(245, 10%, 22%);
+
+$clr-grey-300: hsl(240, 2%, 92%);
+$clr-grey-100: hsl(0, 0%, 98%);
+
+$clr-danger-300: hsl(0, 90%, 57%);
+
+$clr-white: hsl(0, 0%, 100%);
+$clr-black: hsl(0, 0%, 0%);
+
+/* ------------------------ */
+/*        TYPOGRAPHY        */
+/* ------------------------ */
+$ff-primary: "Public Sans", sans-serif;
+$ff-secondary: "Ibarra Real Nova", serif;
+
+$fs-300: 1.2rem;
+$fs-400: 1.3rem;
+$fs-600: 1.6rem;
+$fs-500: 1.5rem;
+$fs-700: 3.2rem;
+$fs-800: 4rem;
+$fs-900: 5rem;
+
+$fw-bold: 700;
+$fw-regular: 400;
+
+$ls-100: -0.45px;
+$ls-200: -0.36px;
+$ls-300: -0.29px;
+$ls-400: 2px;
+
+/* ------------------------ */
+/*          SPACING         */
+/* ------------------------ */
+$spacing-900: 6.2rem;
+$spacing-800: 5.6rem;
+$spacing-700: 4.4rem;
+$spacing-600: 4.2rem;
+$spacing-500: 3.3rem;
+$spacing-400: 3rem;
+$spacing-300: 1.5rem;
+
+$padding-900: $spacing-900;
+$padding-800: $spacing-800;
+$padding-700: $spacing-700;
+$padding-600: $spacing-600;
+$padding-500: $spacing-500;
+$padding-400: $spacing-400;
+$padding-300: $spacing-300;
+
+$margin-900: $spacing-900;
+$margin-800: $spacing-800;
+$margin-700: $spacing-700;
+$margin-600: $spacing-600;
+$margin-500: $spacing-500;
+$margin-400: $spacing-400;
+$margin-300: $spacing-300;
+
+$gap-900: $spacing-900;
+$gap-800: $spacing-800;
+$gap-700: $spacing-700;
+$gap-600: $spacing-600;
+$gap-500: $spacing-500;
+$gap-400: $spacing-400;
+$gap-300: $spacing-300;
+
+/* ------------------------ */
+/*        BREAKPOINTS       */
+/* ------------------------ */
+$bp-mobile: 23.4375em;
+$bp-tablet: 48em;
+$bp-desktop: 90em;
+
+$available-breakpoints: (
+  "mobile": (
+    min-width: $bp-mobile,
+  ),
+  "tablet": (
+    min-width: $bp-tablet,
+  ),
+  "desktop": (
+    min-width: $bp-desktop,
+  ),
+);

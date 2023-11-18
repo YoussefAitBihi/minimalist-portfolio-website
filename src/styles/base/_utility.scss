@@ -1,0 +1,23 @@
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.container {
+  // max-width: 144rem;
+  padding-inline: 2rem;
+  margin-inline: auto;
+
+  @include respond-to("tablet") {
+    max-width: 80rem;
+  }
+
+  @media (min-width: 1121px) {
+    max-width: 120rem;
+  }
+}

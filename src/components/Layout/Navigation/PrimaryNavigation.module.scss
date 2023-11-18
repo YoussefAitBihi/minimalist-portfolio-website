@@ -1,0 +1,57 @@
+@import "../../../styles/abstracts/variables";
+@import "../../../styles/abstracts/mixins";
+
+.primary-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 2rem;
+  position: relative;
+
+  &__list {
+    position: absolute;
+    right: 0;
+    top: 7rem;
+    background-color: $clr-primary-blue-400;
+    padding: 2rem 6rem;
+    text-align: center;
+  }
+
+  &__link:where(:link, :visited) {
+    display: block;
+    padding-block: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $clr-white;
+    font-size: $fs-300;
+    letter-spacing: $ls-400;
+  }
+
+  @include respond-to("tablet") {
+    padding-block: 4rem;
+
+    &__list {
+      position: static;
+      padding: 0;
+      background-color: transparent;
+      color: $clr-primary-blue-400;
+      display: flex;
+      column-gap: 4.2rem; // Temp
+    }
+
+    &__link {
+      &:where(:link, :visited) {
+        color: $clr-primary-blue-400;
+        padding-block: 0;
+      }
+
+      &:where(:hover, :focus) {
+        color: $clr-primary-cyan-400;
+      }
+
+      &--active {
+        color: $clr-primary-cyan-400;
+      }
+    }
+  }
+}

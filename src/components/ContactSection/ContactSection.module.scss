@@ -1,0 +1,35 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+
+.contact-section {
+  text-align: center;
+  margin-bottom: $margin-900;
+
+  &__title {
+    font-family: $ff-secondary;
+    font-size: $fs-800;
+    letter-spacing: $ls-200;
+    color: $clr-primary-blue-400;
+    margin-bottom: $margin-700;
+  }
+
+  @include respond-to("tablet") {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    align-items: center;
+    gap: $gap-600;
+
+    text-align: initial;
+
+    &__title {
+      width: 16ch;
+      margin-bottom: 0;
+    }
+
+    &__divider {
+      height: 2px;
+      background-color: $clr-grey-300;
+      flex: 1;
+    }
+  }
+}
