@@ -1,33 +1,54 @@
-import classes from "./Portfolio.module.scss";
 import { useState, useEffect } from "react";
+import SpinnerLoading from "../../components/UI/SpinnerLoading/Spinner";
+import PortfolioList from "../../components/PortfolioList/PortfolioList";
+import TitleForAssistiveTechnologies from "../../components/TitleForAssistiveTechnologies/TitleForAssistiveTechnologies";
 
 const PortfolioPage = () => {
-  const [projects, setProjects] = useState([]);
+  const initialPortfolioState = {
+    items: [],
+    isLoading: false,
+  };
+
+  const [portfolioState, setPortfolioState] = useState(initialPortfolioState);
 
   useEffect(() => {
     const fetchProjects = async () => {
-      const response = await fetch("/src/utils/projects.json");
+      setPortfolioState((prevPortfolioState) => {
+        return {
+          ...prevPortfolioState,
+          isLoading: true,
+        };
+      });
 
-      if (!response) {
+      const response = await fetch("/data/projects.json");
+
+      if (!response.ok) {
         throw new Error(
           "There was a problem during sending the request. Try again!"
         );
       }
-
       const data = await response.json();
-      setProjects(Object.values(data));
+
+      setPortfolioState({
+        items: Object.values(data),
+        isLoading: false,
+      });
     };
 
     fetchProjects();
   }, []);
 
   return (
-    <ul className={classes["portfolio-list"]} role="list">
-      <li className={classes["portfolio-list__item"]}>
-        <article></article>
-      </li>
-    </ul>
+    <>
+      <TitleForAssistiveTechnologies title="Portfolio Page" />
+      {portfolioState.isLoading && <SpinnerLoading />}
+      {!portfolioState.isLoading && portfolioState.items.length > 0 && (
+        <PortfolioList items={portfolioState.items} />
+      )}
+    </>
   );
+
+  return <div></div>;
 };
 
 export default PortfolioPage;

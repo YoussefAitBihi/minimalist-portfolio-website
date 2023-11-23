@@ -1,6 +1,5 @@
 import { FC } from "react";
 import classes from "./PrimaryButton.module.scss";
-// import { Link } from "react-router-dom";
 
 type Button = {
   tag: {

@@ -5,11 +5,14 @@ import GithubIcon from "../../../assets/icons/Github";
 import TwitterIcon from "../../../assets/icons/Twitter";
 import LinkedinIcon from "../../../assets/icons/Linkedin";
 import ContactSection from "../../ContactSection/ContactSection";
+import { useLocation } from "react-router-dom";
 
 const PrimaryFooter: React.FC = () => {
+  const location = useLocation();
+
   return (
     <footer className={classes["primary-footer"]}>
-      <ContactSection />
+      {location.pathname !== "/contact-me" && <ContactSection />}
       <div className={classes["primary-footer__bottom"]}>
         <div className="container">
           <nav className={classes["primary-footer__navigation"]}>

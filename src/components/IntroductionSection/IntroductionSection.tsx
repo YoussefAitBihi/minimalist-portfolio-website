@@ -2,7 +2,11 @@ import classes from "./IntroductionSection.module.scss";
 import PrimaryButton from "../UI/PrimaryButton/PrimaryButton";
 import ArrowDownIcon from "../../assets/icons/ArrowDown";
 
-const IntroductionSection = () => {
+type IntroductionSectionProps = {
+  title: string;
+};
+
+const IntroductionSection: React.FC<IntroductionSectionProps> = (props) => {
   return (
     <section
       aria-labelledby="section-introduction-title"
@@ -14,8 +18,7 @@ const IntroductionSection = () => {
           className={classes["section-introduction__title"]}
           id="section-introduction-title"
         >
-          Hey, Je suis Youssef Ait Bihi, un développeur front spécialisé dans
-          React/Next.
+          {props.title}
         </h1>
         <PrimaryButton
           tag={{

@@ -1,9 +1,15 @@
 import PrimaryNavigation from "../Navigation/PrimaryNavigation";
-import classes from "./PrimaryHeader.module.scss";
+import { useLocation } from "react-router-dom";
 
 const PrimaryHeader = () => {
+  const location = useLocation();
+  const { pathname } = location;
   return (
-    <header className={`${classes["primary-header"]} container`}>
+    <header
+      className={`primary-header ${
+        pathname !== "/" ? "primary-header--margin-bottom" : ""
+      } container`}
+    >
       <PrimaryNavigation />
     </header>
   );

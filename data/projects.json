@@ -3,7 +3,7 @@
     "id": "p1",
     "title": "Fullstack E-commerce Shopping Cart",
     "description": "Ce projet met en avant mon expertise dans le développement d'une plateforme e-commerce multipage et responsive en utilisant des technologies web modernes telles que HTML, CSS, React, React Router DOM, Redux, Redux Toolkit et Supabase.",
-    "images": {
+    "picture": {
       "desktop": {
         "1x": "/src/assets/images/portfolio/desktop/image-portfolio-bookmark.jpg",
         "2x": "/src/assets/images/portfolio/desktop/image-portfolio-bookmark@2x.jpg"
@@ -22,13 +22,14 @@
       "React, React Router Dom",
       "Redux, Redux Toolkit",
       "Supabase BAAS"
-    ]
+    ],
+    "slug": "fullstack-ecommerce-shopping-cart"
   },
   "p2": {
     "id": "p2",
     "title": "Space tourism multi-page website",
     "description": "Ce projet met en avant mon expertise dans le développement d'une plateforme e-commerce multipage et responsive en utilisant des technologies web modernes telles que HTML, CSS, React, React Router DOM, Redux, Redux Toolkit et Supabase.",
-    "images": {
+    "picture": {
       "desktop": {
         "1x": "/src/assets/images/portfolio/desktop/image-portfolio-fylo.jpg",
         "2x": "/src/assets/images/portfolio/desktop/image-portfolio-fylo@2x.jpg"
@@ -42,13 +43,14 @@
         "2x": "/src/assets/images/portfolio/mobile/image-portfolio-fylo@2x.jpg"
       }
     },
-    "technologies": ["HTML, CSS, SASS", "JS"]
+    "technologies": ["HTML, CSS, SASS", "JS"],
+    "slug": "space-tourism-multi-page-website"
   },
   "p3": {
     "id": "p3",
     "title": "Natours landing page",
     "description": "Ce projet met en avant mon expertise dans le développement d'une plateforme e-commerce multipage et responsive en utilisant des technologies web modernes telles que HTML, CSS, React, React Router DOM, Redux, Redux Toolkit et Supabase.",
-    "images": {
+    "picture": {
       "desktop": {
         "1x": "/src/assets/images/portfolio/desktop/image-portfolio-insure.jpg",
         "2x": "/src/assets/images/portfolio/desktop/image-portfolio-insure@2x.jpg"
@@ -62,6 +64,7 @@
         "2x": "/src/assets/images/portfolio/mobile/image-portfolio-insure@2x.jpg"
       }
     },
-    "technologies": ["HTML, CSS, SASS", "JS"]
+    "technologies": ["HTML, CSS, SASS", "JS"],
+    "slug": "natours-landing-page"
   }
 }

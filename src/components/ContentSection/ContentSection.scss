@@ -1,7 +1,10 @@
-@import "../../styles/abstracts/variables";
-@import "../../styles/abstracts/mixins";
-
 .content-section {
+  --_margin-bottom-lg: 7rem;
+
+  &--margin-bottom-lg {
+    margin-bottom: var(--_margin-bottom-lg);
+  }
+
   &__picture {
     margin-bottom: $margin-400;
   }
@@ -10,6 +13,10 @@
     padding-block: $padding-500;
     border-top: 2px solid $clr-grey-300;
     border-bottom: 2px solid $clr-grey-300;
+  }
+
+  &--infos-left &__infos {
+    order: -1;
   }
 
   &__title {
@@ -25,10 +32,10 @@
   }
 
   @include respond-to("tablet") {
+    --_margin-bottom-lg: 8rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    // gap: clamp($spacing-700, 6vw + 1rem, $spacing-900);
 
     &__picture {
       margin-bottom: 0;

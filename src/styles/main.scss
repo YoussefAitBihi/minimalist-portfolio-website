@@ -4,3 +4,8 @@
 
 @import "./base/base";
 @import "./base/utility";
+
+@import "../components/Layout/Header/PrimaryHeader.module.scss";
+
+@import "../components/ContentSection/ContentSection.scss";
+@import "../components/UI/SpinnerLoading/Spinner.module.scss";
