@@ -19,3 +19,11 @@
     @error "`#{$breakpoint}` doesn't exist. Make sure you have passed a valid breakpoint. Try to look at variables.scss";
   }
 }
+
+// Clamp a text
+@mixin text-clamp($lineLimit) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lineLimit;
+  overflow: hidden;
+}

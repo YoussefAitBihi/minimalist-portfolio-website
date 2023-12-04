@@ -1,0 +1,8 @@
+.portfolio-item-wrapper {
+  @include respond-to("desktop") {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+    gap: $gap-900;
+  }
+}

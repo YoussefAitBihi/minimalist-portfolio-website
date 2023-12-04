@@ -1,9 +1,10 @@
-{
-  "p1": {
+[
+  {
     "id": "p1",
     "title": "Fullstack E-commerce Shopping Cart",
     "description": "Ce projet met en avant mon expertise dans le développement d'une plateforme e-commerce multipage et responsive en utilisant des technologies web modernes telles que HTML, CSS, React, React Router DOM, Redux, Redux Toolkit et Supabase.",
-    "picture": {
+    "longDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, architecto repudiandae quis veniam neque incidunt officia suscipit nulla, unde ad doloremque odio? Dolor iste nisi, autem doloremque ipsam exercitationem expedita atque architecto maiores praesentium? Illum, aliquam! Neque, illum atque maiores repellat aperiam voluptatum recusandae sed, inventore qui quas consectetur et hic. Illum dignissimos officia numquam assumenda neque porro suscipit fugiat, similique eius deleniti in fugit id ipsam reprehenderit. Omnis, consequuntur incidunt eveniet voluptas dolor eaque aliquam aut quis praesentium? Animi veniam laborum nostrum fuga veritatis architecto ipsum vel quo eveniet, accusantium laboriosam quibusdam explicabo voluptatum odit quaerat maiores! Quo, repellat.",
+    "thumbnail": {
       "desktop": {
         "1x": "/src/assets/images/portfolio/desktop/image-portfolio-bookmark.jpg",
         "2x": "/src/assets/images/portfolio/desktop/image-portfolio-bookmark@2x.jpg"
@@ -17,19 +18,63 @@
         "2x": "/src/assets/images/portfolio/mobile/image-portfolio-bookmark@2x.jpg"
       }
     },
+    "hero": {
+      "desktop": {
+        "1x": "/src/assets/images/detail/desktop/image-bookmark-hero.jpg",
+        "2x": "/src/assets/images/detail/desktop/image-bookmark-hero@2x.jpg"
+      },
+      "tablet": {
+        "1x": "/src/assets/images/detail/tablet/image-bookmark-hero.jpg",
+        "2x": "/src/assets/images/detail/tablet/image-bookmark-hero@2x.jpg"
+      },
+      "mobile": {
+        "1x": "/src/assets/images/detail/mobile/image-bookmark-hero.jpg",
+        "2x": "/src/assets/images/detail/mobile/image-bookmark-hero@2x.jpg"
+      }
+    },
+    "firstPreview": {
+      "desktop": {
+        "1x": "/src/assets/images/detail/desktop/image-bookmark-preview-1.jpg",
+        "2x": "/src/assets/images/detail/desktop/image-bookmark-preview-1@2x.jpg"
+      },
+      "tablet": {
+        "1x": "/src/assets/images/detail/tablet/image-bookmark-preview-1.jpg",
+        "2x": "/src/assets/images/detail/tablet/image-bookmark-preview-1@2x.jpg"
+      },
+      "mobile": {
+        "1x": "/src/assets/images/detail/mobile/image-bookmark-preview-1.jpg",
+        "2x": "/src/assets/images/detail/mobile/image-bookmark-preview-1@2x.jpg"
+      }
+    },
+    "secondPreview": {
+      "desktop": {
+        "1x": "/src/assets/images/detail/desktop/image-bookmark-preview-2.jpg",
+        "2x": "/src/assets/images/detail/desktop/image-bookmark-preview-2@2x.jpg"
+      },
+      "tablet": {
+        "1x": "/src/assets/images/detail/tablet/image-bookmark-preview-2.jpg",
+        "2x": "/src/assets/images/detail/tablet/image-bookmark-preview-2@2x.jpg"
+      },
+      "mobile": {
+        "1x": "/src/assets/images/detail/mobile/image-bookmark-preview-2.jpg",
+        "2x": "/src/assets/images/detail/mobile/image-bookmark-preview-2@2x.jpg"
+      }
+    },
+    "slug": "fullstack-ecommerce-shopping-cart",
+    "projectURL": "www.google.com",
     "technologies": [
-      "HTML, CSS, SASS",
-      "React, React Router Dom",
-      "Redux, Redux Toolkit",
-      "Supabase BAAS"
-    ],
-    "slug": "fullstack-ecommerce-shopping-cart"
+      "html / css / sass",
+      "react / react router",
+      "redux / redux toolkit",
+      "supabase"
+    ]
   },
-  "p2": {
+  {
     "id": "p2",
     "title": "Space tourism multi-page website",
     "description": "Ce projet met en avant mon expertise dans le développement d'une plateforme e-commerce multipage et responsive en utilisant des technologies web modernes telles que HTML, CSS, React, React Router DOM, Redux, Redux Toolkit et Supabase.",
-    "picture": {
+    "longDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, architecto repudiandae quis veniam neque incidunt officia suscipit nulla, unde ad doloremque odio? Dolor iste nisi, autem doloremque ipsam exercitationem expedita atque architecto maiores praesentium? Illum, aliquam! Neque, illum atque maiores repellat aperiam voluptatum recusandae sed, inventore qui quas consectetur et hic. Illum dignissimos officia numquam assumenda neque porro suscipit fugiat, similique eius deleniti in fugit id ipsam reprehenderit. Omnis, consequuntur incidunt eveniet voluptas dolor eaque aliquam aut quis praesentium? Animi veniam laborum nostrum fuga veritatis architecto ipsum vel quo eveniet, accusantium laboriosam quibusdam explicabo voluptatum odit quaerat maiores! Quo, repellat.",
+    "thumbnail": {
       "desktop": {
         "1x": "/src/assets/images/portfolio/desktop/image-portfolio-fylo.jpg",
         "2x": "/src/assets/images/portfolio/desktop/image-portfolio-fylo@2x.jpg"
@@ -43,28 +88,125 @@
         "2x": "/src/assets/images/portfolio/mobile/image-portfolio-fylo@2x.jpg"
       }
     },
-    "technologies": ["HTML, CSS, SASS", "JS"],
-    "slug": "space-tourism-multi-page-website"
+    "hero": {
+      "desktop": {
+        "1x": "/src/assets/images/detail/desktop/image-fylo-hero.jpg",
+        "2x": "/src/assets/images/detail/desktop/image-fylo-hero@2x.jpg"
+      },
+      "tablet": {
+        "1x": "/src/assets/images/detail/tablet/image-fylo-hero.jpg",
+        "2x": "/src/assets/images/detail/tablet/image-fylo-hero@2x.jpg"
+      },
+      "mobile": {
+        "1x": "/src/assets/images/detail/mobile/image-fylo-hero.jpg",
+        "2x": "/src/assets/images/detail/mobile/image-fylo-hero@2x.jpg"
+      }
+    },
+    "firstPreview": {
+      "desktop": {
+        "1x": "/src/assets/images/detail/desktop/image-fylo-preview-1.jpg",
+        "2x": "/src/assets/images/detail/desktop/image-fylo-preview-1@2x.jpg"
+      },
+      "tablet": {
+        "1x": "/src/assets/images/detail/tablet/image-fylo-preview-1.jpg",
+        "2x": "/src/assets/images/detail/tablet/image-fylo-preview-1@2x.jpg"
+      },
+      "mobile": {
+        "1x": "/src/assets/images/detail/mobile/image-fylo-preview-1.jpg",
+        "2x": "/src/assets/images/detail/mobile/image-fylo-preview-1@2x.jpg"
+      }
+    },
+    "secondPreview": {
+      "desktop": {
+        "1x": "/src/assets/images/detail/desktop/image-fylo-preview-2.jpg",
+        "2x": "/src/assets/images/detail/desktop/image-fylo-preview-2@2x.jpg"
+      },
+      "tablet": {
+        "1x": "/src/assets/images/detail/tablet/image-fylo-preview-2.jpg",
+        "2x": "/src/assets/images/detail/tablet/image-fylo-preview-2@2x.jpg"
+      },
+      "mobile": {
+        "1x": "/src/assets/images/detail/mobile/image-fylo-preview-2.jpg",
+        "2x": "/src/assets/images/detail/mobile/image-fylo-preview-2@2x.jpg"
+      }
+    },
+    "slug": "space-tourism-multi-page-website",
+    "projectURL": "www.smashingmagazine.com",
+    "technologies": [
+      "html / css / sass",
+      "react / react router",
+      "redux / redux toolkit",
+      "supabase"
+    ]
   },
-  "p3": {
+  {
     "id": "p3",
     "title": "Natours landing page",
     "description": "Ce projet met en avant mon expertise dans le développement d'une plateforme e-commerce multipage et responsive en utilisant des technologies web modernes telles que HTML, CSS, React, React Router DOM, Redux, Redux Toolkit et Supabase.",
-    "picture": {
+    "longDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, architecto repudiandae quis veniam neque incidunt officia suscipit nulla, unde ad doloremque odio? Dolor iste nisi, autem doloremque ipsam exercitationem expedita atque architecto maiores praesentium? Illum, aliquam! Neque, illum atque maiores repellat aperiam voluptatum recusandae sed, inventore qui quas consectetur et hic. Illum dignissimos officia numquam assumenda neque porro suscipit fugiat, similique eius deleniti in fugit id ipsam reprehenderit. Omnis, consequuntur incidunt eveniet voluptas dolor eaque aliquam aut quis praesentium? Animi veniam laborum nostrum fuga veritatis architecto ipsum vel quo eveniet, accusantium laboriosam quibusdam explicabo voluptatum odit quaerat maiores! Quo, repellat.",
+    "thumbnail": {
       "desktop": {
-        "1x": "/src/assets/images/portfolio/desktop/image-portfolio-insure.jpg",
-        "2x": "/src/assets/images/portfolio/desktop/image-portfolio-insure@2x.jpg"
+        "1x": "/src/assets/images/portfolio/desktop/image-portfolio-manage.jpg",
+        "2x": "/src/assets/images/portfolio/desktop/image-portfolio-manage@2x.jpg"
       },
       "tablet": {
-        "1x": "/src/assets/images/portfolio/tablet/image-portfolio-insure.jpg",
-        "2x": "/src/assets/images/portfolio/tablet/image-portfolio-insure@2x.jpg"
+        "1x": "/src/assets/images/portfolio/tablet/image-portfolio-manage.jpg",
+        "2x": "/src/assets/images/portfolio/tablet/image-portfolio-manage@2x.jpg"
       },
       "mobile": {
-        "1x": "/src/assets/images/portfolio/mobile/image-portfolio-insure.jpg",
-        "2x": "/src/assets/images/portfolio/mobile/image-portfolio-insure@2x.jpg"
+        "1x": "/src/assets/images/portfolio/mobile/image-portfolio-manage.jpg",
+        "2x": "/src/assets/images/portfolio/mobile/image-portfolio-manage@2x.jpg"
       }
     },
-    "technologies": ["HTML, CSS, SASS", "JS"],
-    "slug": "natours-landing-page"
+    "hero": {
+      "desktop": {
+        "1x": "/src/assets/images/detail/desktop/image-manage-hero.jpg",
+        "2x": "/src/assets/images/detail/desktop/image-manage-hero@2x.jpg"
+      },
+      "tablet": {
+        "1x": "/src/assets/images/detail/tablet/image-manage-hero.jpg",
+        "2x": "/src/assets/images/detail/tablet/image-manage-hero@2x.jpg"
+      },
+      "mobile": {
+        "1x": "/src/assets/images/detail/mobile/image-manage-hero.jpg",
+        "2x": "/src/assets/images/detail/mobile/image-manage-hero@2x.jpg"
+      }
+    },
+    "firstPreview": {
+      "desktop": {
+        "1x": "/src/assets/images/detail/desktop/image-manage-preview-1.jpg",
+        "2x": "/src/assets/images/detail/desktop/image-manage-preview-1@2x.jpg"
+      },
+      "tablet": {
+        "1x": "/src/assets/images/detail/tablet/image-manage-preview-1.jpg",
+        "2x": "/src/assets/images/detail/tablet/image-manage-preview-1@2x.jpg"
+      },
+      "mobile": {
+        "1x": "/src/assets/images/detail/mobile/image-manage-preview-1.jpg",
+        "2x": "/src/assets/images/detail/mobile/image-manage-preview-1@2x.jpg"
+      }
+    },
+    "secondPreview": {
+      "desktop": {
+        "1x": "/src/assets/images/detail/desktop/image-manage-preview-2.jpg",
+        "2x": "/src/assets/images/detail/desktop/image-manage-preview-2@2x.jpg"
+      },
+      "tablet": {
+        "1x": "/src/assets/images/detail/tablet/image-manage-preview-2.jpg",
+        "2x": "/src/assets/images/detail/tablet/image-manage-preview-2@2x.jpg"
+      },
+      "mobile": {
+        "1x": "/src/assets/images/detail/mobile/image-manage-preview-2.jpg",
+        "2x": "/src/assets/images/detail/mobile/image-manage-preview-2@2x.jpg"
+      }
+    },
+    "slug": "natours-landing-page",
+    "projectURL": "www.web.dev",
+    "technologies": [
+      "html / css / sass",
+      "react / react router",
+      "redux / redux toolkit",
+      "supabase"
+    ]
   }
-}
+]

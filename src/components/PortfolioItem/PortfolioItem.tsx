@@ -20,16 +20,16 @@ const PortfolioItem: React.FC<{ item: PortfolioItemProps; index: number }> = ({
         }}
         picture={{
           desktop: {
-            "1x": `${item.picture.desktop["1x"]}`,
-            "2x": `${item.picture.desktop["2x"]}`,
+            "1x": `${item.thumbnail.desktop["1x"]}`,
+            "2x": `${item.thumbnail.desktop["2x"]}`,
           },
           tablet: {
-            "1x": `${item.picture.tablet["1x"]}`,
-            "2x": `${item.picture.tablet["2x"]}`,
+            "1x": `${item.thumbnail.tablet["1x"]}`,
+            "2x": `${item.thumbnail.tablet["2x"]}`,
           },
           mobile: {
-            "1x": `${item.picture.mobile["1x"]}`,
-            "2x": `${item.picture.mobile["2x"]}`,
+            "1x": `${item.thumbnail.mobile["1x"]}`,
+            "2x": `${item.thumbnail.mobile["2x"]}`,
           },
         }}
       >

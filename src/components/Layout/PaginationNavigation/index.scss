@@ -1,0 +1,12 @@
+.pagination-navigation {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid $clr-grey-300;
+  border-bottom: 2px solid $clr-grey-300;
+  margin-bottom: $margin-600;
+
+  &__divider {
+    width: 2px;
+    background-color: $clr-grey-300;
+  }
+}

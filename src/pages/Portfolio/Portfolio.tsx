@@ -27,10 +27,11 @@ const PortfolioPage = () => {
           "There was a problem during sending the request. Try again!"
         );
       }
+
       const data = await response.json();
 
       setPortfolioState({
-        items: Object.values(data),
+        items: data,
         isLoading: false,
       });
     };
@@ -47,8 +48,6 @@ const PortfolioPage = () => {
       )}
     </>
   );
-
-  return <div></div>;
 };
 
 export default PortfolioPage;

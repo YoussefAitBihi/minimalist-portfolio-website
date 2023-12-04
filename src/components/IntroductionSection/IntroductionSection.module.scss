@@ -11,6 +11,7 @@
   &__title {
     font-family: $ff-secondary;
     font-size: clamp($fs-800, calc(6vw + 1rem), $fs-900);
+    color: $clr-primary-blue-400;
     letter-spacing: $ls-200;
     padding-block: $padding-400;
   }

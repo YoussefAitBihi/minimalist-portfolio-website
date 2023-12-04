@@ -1,0 +1,39 @@
+.project-link {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: $gap-400;
+  padding-block: $padding-300;
+
+  &:where(:link, :visited) {
+    text-decoration: none;
+  }
+
+  &--right-to-left {
+    direction: rtl;
+  }
+
+  &__title {
+    color: $clr-primary-blue-400;
+    font-family: $ff-secondary;
+    font-weight: $fw-regular;
+    font-size: $fs-700;
+    letter-spacing: $ls-300;
+    @include text-clamp(1);
+  }
+
+  &__text {
+    margin-top: -1rem;
+    color: $clr-primary-blue-100;
+  }
+
+  @include respond-to("tablet") {
+    flex-direction: row;
+    align-items: center;
+    padding-block: $padding-400;
+  }
+
+  @media (width < $bp-tablet) {
+    gap: 1rem;
+  }
+}

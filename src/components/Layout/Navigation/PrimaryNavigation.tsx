@@ -20,8 +20,12 @@ const PrimaryNavigation = () => {
   };
 
   return (
-    <nav className={classes["primary-navigation"]}>
+    <nav
+      className={classes["primary-navigation"]}
+      aria-label="Primary Navigation"
+    >
       <Link to="/" className={classes["primary-navigation__logo"]}>
+        <span className="visually-hidden">Go to homepage</span>
         <LogoIcon />
       </Link>
       <HamburgerButton

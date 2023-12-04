@@ -1,0 +1,45 @@
+.brief-content {
+  margin-bottom: $margin-500;
+  padding-block: $padding-600;
+  border-top: 2px solid $clr-grey-300;
+  border-bottom: 2px solid $clr-grey-300;
+  display: grid;
+  gap: $gap-400;
+
+  &__title {
+    font-size: $fs-800;
+    font-family: $ff-secondary;
+    letter-spacing: $ls-200;
+    color: $clr-primary-blue-400;
+  }
+
+  &__description {
+    font-size: $fs-500;
+  }
+
+  &__technology {
+    color: $clr-primary-cyan-400;
+    font-size: $fs-400;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+      margin-bottom: $gap-300;
+    }
+  }
+
+  @media only screen and (min-width: $bp-tablet) and (max-width: calc($bp-desktop - 1px)) {
+    grid-template-areas:
+      "title description"
+      "technologies description"
+      "button description";
+
+    &__description {
+      grid-area: description;
+    }
+  }
+
+  @include respond-to("desktop") {
+    margin-bottom: 0;
+  }
+}

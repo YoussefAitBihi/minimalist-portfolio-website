@@ -6,6 +6,11 @@
 @import "./base/utility";
 
 @import "../components/Layout/Header/PrimaryHeader.module.scss";
-
+@import "../components/BriefContent/BriefContent.scss";
 @import "../components/ContentSection/ContentSection.scss";
 @import "../components/UI/SpinnerLoading/Spinner.module.scss";
+@import "../components/PortfolioItemDetail/PortfolioItemDetail.scss";
+@import "../components/PortfolioItemDetail/PortfolioItemDetailWrapper.scss";
+
+@import "../components/Layout/PaginationNavigation/index.scss";
+@import "../components/ProjectLink/index.scss";

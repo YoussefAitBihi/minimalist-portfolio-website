@@ -4,7 +4,12 @@ type PortfolioItemProps = {
   id: string;
   title: string;
   description: string;
-  picture: PictureProps;
+  longDescription: string;
+  thumbnail: PictureProps;
+  hero: PictureProps;
+  firstPreview: PictureProps;
+  secondPreview: PictureProps;
+  projectURL: string;
   slug: string;
   technologies: string[];
 };
