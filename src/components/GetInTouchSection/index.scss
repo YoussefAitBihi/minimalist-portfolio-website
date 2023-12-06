@@ -1,0 +1,23 @@
+.section-get-in-touch {
+  margin-bottom: $margin-500;
+  padding-block: $padding-600;
+  border-top: 2px solid $clr-grey-300;
+  border-bottom: 2px solid $clr-grey-300;
+  display: grid;
+  gap: $gap-300;
+
+  &__title {
+    font-family: $ff-secondary;
+    font-size: $fs-800;
+    letter-spacing: $ls-200;
+    color: $clr-primary-blue-400;
+  }
+
+  &__description {
+    margin-bottom: $margin-300;
+  }
+
+  @include respond-to("desktop") {
+    grid-template-columns: 1fr 2fr;
+  }
+}

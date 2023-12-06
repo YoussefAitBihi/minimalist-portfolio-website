@@ -1,5 +1,15 @@
+import ContactMeSection from "../../components/ContactMeSection";
+import GetInTouchSection from "../../components/GetInTouchSection";
+import TitleForAssistiveTechnologies from "../../components/TitleForAssistiveTechnologies/TitleForAssistiveTechnologies";
+
 const ContactPage = () => {
-  return <h1>Contact Me Page Rendered</h1>;
+  return (
+    <>
+      <TitleForAssistiveTechnologies title="Contact me page" />
+      <GetInTouchSection />
+      <ContactMeSection />
+    </>
+  );
 };
 
 export default ContactPage;

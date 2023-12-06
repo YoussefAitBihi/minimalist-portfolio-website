@@ -1,0 +1,16 @@
+.section-contact-me {
+  display: grid;
+  gap: $gap-300;
+
+  &__title {
+    font-family: $ff-secondary;
+    font-size: $fs-800;
+    font-weight: $fw-bold;
+    letter-spacing: $ls-200;
+    color: $clr-primary-blue-400;
+  }
+
+  @include respond-to("desktop") {
+    grid-template-columns: 1fr 2fr;
+  }
+}

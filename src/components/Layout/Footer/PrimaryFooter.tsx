@@ -1,11 +1,9 @@
 import classes from "./PrimaryFooter.module.scss";
 import { Link } from "react-router-dom";
 import LogoIcon from "../../../assets/icons/Logo";
-import GithubIcon from "../../../assets/icons/Github";
-import TwitterIcon from "../../../assets/icons/Twitter";
-import LinkedinIcon from "../../../assets/icons/Linkedin";
 import ContactSection from "../../ContactSection/ContactSection";
 import { useLocation } from "react-router-dom";
+import SocialMediaList from "../../UI/SocialMediaList";
 
 const PrimaryFooter: React.FC = () => {
   const location = useLocation();
@@ -43,39 +41,7 @@ const PrimaryFooter: React.FC = () => {
               </li>
             </ul>
           </nav>
-
-          <ul
-            className={classes["primary-footer__social-media-list"]}
-            role="list"
-          >
-            <li className={classes["primary-footer__social-media-item"]}>
-              <Link
-                to="https://github.com/YoussefAitBihi"
-                className={classes["primary-footer__social-media-link"]}
-                target="_blank"
-              >
-                <GithubIcon />
-              </Link>
-            </li>
-            <li className={classes["primary-footer__social-media-item"]}>
-              <Link
-                to="https://twitter.com/ayt_bihi"
-                className={classes["primary-footer__social-media-link"]}
-                target="_blank"
-              >
-                <TwitterIcon />
-              </Link>
-            </li>
-            <li className={classes["primary-footer__social-media-item"]}>
-              <Link
-                to="https://www.linkedin.com/in/youssef-ait-bihi-527944167/"
-                className={classes["primary-footer__social-media-link"]}
-                target="_blank"
-              >
-                <LinkedinIcon />
-              </Link>
-            </li>
-          </ul>
+          <SocialMediaList />
         </div>
       </div>
     </footer>

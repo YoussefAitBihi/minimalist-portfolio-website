@@ -1,0 +1,54 @@
+.form-group {
+  margin-bottom: $margin-400;
+
+  &__label {
+    font-size: $fs-400;
+    font-weight: $fw-bold;
+    margin-bottom: $margin-300;
+    color: $clr-primary-blue-400;
+  }
+
+  &__control {
+    display: block;
+    width: 100%;
+    font-size: $fs-400;
+    background-color: $clr-grey-300;
+    border: 1px solid transparent;
+    padding: 0.8em;
+    color: $clr-primary-blue-400;
+    outline: none;
+    transition: all 0.2s ease-in;
+
+    &:where(:focus) {
+      background-color: $clr-grey-100;
+      border-color: $clr-grey-300;
+    }
+
+    &--textarea {
+      resize: vertical;
+      height: max(20rem, 25dvh);
+      max-height: 25rem;
+      min-height: 15rem;
+    }
+
+    &--error {
+      border: 1px solid $clr-danger-300;
+    }
+
+    &--success {
+      border: 1px solid $clr-primary-cyan-400;
+    }
+  }
+
+  &__error {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: $fw-bold;
+    color: $clr-danger-300;
+  }
+}
+
+::-webkit-input-placeholder {
+  // color: white;
+  color: $clr-primary-blue-100;
+}

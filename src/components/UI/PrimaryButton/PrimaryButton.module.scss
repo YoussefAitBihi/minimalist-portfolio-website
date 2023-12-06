@@ -1,6 +1,9 @@
 @import "../../../styles/abstracts/variables";
 
 .primary-button {
+  --_padding-block: 1.4em;
+  --_padding-inline: 2.8em;
+
   &,
   &:where(:link, :visited) {
     background-color: $clr-primary-blue-700;
@@ -15,6 +18,16 @@
     cursor: pointer;
   }
 
+  &[aria-disabled="true"] {
+    background-color: $clr-grey-300;
+
+    cursor: not-allowed;
+  }
+
+  &:not(:has(span)) {
+    padding: var(--_padding-block) var(--_padding-inline);
+  }
+
   &:where(:hover, :focus) {
     background-color: $clr-primary-cyan-400;
   }
@@ -27,12 +40,12 @@
     }
   }
 
-  & > span:first-of-type {
-    padding: 1.4em;
+  &:has(span:first-of-type) span:first-of-type {
+    padding: var(--_padding-block);
     background-color: $clr-primary-blue-800;
   }
 
-  & > span:last-of-type {
-    padding-inline: 2.8em;
+  &:has(span:last-of-type) span:last-of-type {
+    padding-inline: var(--_padding-inline);
   }
 }

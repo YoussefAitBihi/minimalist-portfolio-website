@@ -1,0 +1,9 @@
+.social-media {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  &--contact-page {
+    grid-area: social-media;
+  }
+}

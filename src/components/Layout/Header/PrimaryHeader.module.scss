@@ -1,4 +1,9 @@
 .primary-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: $clr-white;
+
   &--margin-bottom {
     margin-bottom: $margin-500;
   }

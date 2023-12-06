@@ -7,6 +7,7 @@ import BriefContent from "../../components/BriefContent/BriefContent";
 import PortfolioItemDetail from "../../components/PortfolioItemDetail/PortfolioItemDetail";
 import PortfolioItemDetailWrapper from "../../components/PortfolioItemDetail/PortfolioItemDetailWrapper";
 import PaginationNavigation from "../../components/Layout/PaginationNavigation";
+import TitleForAssistiveTechnologies from "../../components/TitleForAssistiveTechnologies/TitleForAssistiveTechnologies";
 
 const PortfolioDetailPage = () => {
   const { slug } = useParams();
@@ -85,6 +86,9 @@ const PortfolioDetailPage = () => {
       {portfolioItemState.isLoading && <SpinnerLoading />}
       {!portfolioItemState.isLoading && (
         <>
+          <TitleForAssistiveTechnologies
+            title={`${portfolioItemState.item.title} page`}
+          />
           <PortfolioBackgroundSection
             height="65dvh"
             picture={portfolioItemState.item.hero}

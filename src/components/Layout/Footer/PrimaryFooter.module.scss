@@ -43,12 +43,6 @@
     }
   }
 
-  &__social-media-list {
-    display: inline-flex;
-    align-items: center;
-    gap: 1.2rem;
-  }
-
   @include respond-to("tablet") {
     --_margin-footer: 0;
 
