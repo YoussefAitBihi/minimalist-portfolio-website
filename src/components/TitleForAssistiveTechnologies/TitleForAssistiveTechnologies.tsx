@@ -1,6 +1,6 @@
-const TitleForAssistiveTechnologies: React.FC<{ title: string }> = ({
-  title,
-}) => {
+import { FC } from "react";
+
+const TitleForAssistiveTechnologies: FC<{ title: string }> = ({ title }) => {
   return <h1 className="visually-hidden">{title}</h1>;
 };
 

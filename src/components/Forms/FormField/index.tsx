@@ -4,7 +4,12 @@ type FormFiledProps = {
   field: "input" | "textarea";
   type?: "text" | "email" | "password";
   label: string;
+  name: string;
   placeholder: string;
+  value: string;
+  customClass: string;
+  onChange: (event: React.FocusEvent<HTMLInputElement, Element>) => void;
+  errorMessage: string | null;
 };
 
 const FormField: FC<FormFiledProps> = (props) => {
@@ -12,19 +17,27 @@ const FormField: FC<FormFiledProps> = (props) => {
 
   let formFieldContent = (
     <input
-      type={props.type}
-      className="form-group__control"
+      className={`form-group__control ${props.customClass}`}
       id={inputId}
+      type={props.type}
+      name={props.name}
       placeholder={props.placeholder}
+      value={props.value}
+      onChange={props.onChange}
+      required
     />
   );
 
   if (props.field === "textarea") {
     formFieldContent = (
       <textarea
-        className="form-group__control form-group__control--textarea"
+        className={`form-group__control form-group__control--textarea ${props.customClass}`}
         id={inputId}
+        name={props.name}
         placeholder={props.placeholder}
+        value={props.value}
+        onChange={props.onChange}
+        required
       ></textarea>
     );
   }
@@ -35,7 +48,9 @@ const FormField: FC<FormFiledProps> = (props) => {
         {props.label}
       </label>
       {formFieldContent}
-      <p className="form-group__error">Entrer un texte valide</p>
+      {props.errorMessage && (
+        <p className="form-group__error">{props.errorMessage}</p>
+      )}
     </div>
   );
 };

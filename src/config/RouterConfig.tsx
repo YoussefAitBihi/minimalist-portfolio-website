@@ -1,9 +1,20 @@
+import { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "../pages/Root/RootLayout";
 import HomePage from "../pages/Home/Home";
-import PortfolioPage from "../pages/Portfolio/Portfolio";
-import ContactPage from "../pages/Contact/Contact";
-import PortfolioDetailPage from "../pages/PortfolioDetail/PortfolioDetail";
+import SpinnerLoading from "../components/UI/SpinnerLoading/Spinner";
+
+const PortfolioPage = lazy(() => {
+  import("../pages/Portfolio/Portfolio");
+});
+
+const PortfolioDetailPage = lazy(() => {
+  import("../pages/PortfolioDetail/PortfolioDetail");
+});
+
+const ContactPage = lazy(() => {
+  import("../pages/Contact/Contact");
+});
 
 const RouterConfig = () => {
   const router = createBrowserRouter([
@@ -19,7 +30,11 @@ const RouterConfig = () => {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <Suspense fallback={<SpinnerLoading />}>
+      <RouterProvider router={router} />
+    </Suspense>
+  );
 };
 
 export default RouterConfig;

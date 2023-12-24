@@ -1,0 +1,89 @@
+.notification {
+  --_padding: 1.5rem;
+  --_box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.18);
+  --_position: 5rem;
+
+  display: flex;
+  align-items: center;
+  background-color: $clr-white;
+  padding-block: var(--_padding);
+  border-radius: 1.2rem;
+  box-shadow: var(--_box-shadow);
+
+  position: fixed;
+  top: var(--_position);
+  right: var(--_position);
+  z-index: 99999;
+  translate: calc(100% + 5rem) 0;
+
+  animation: animateNotification 2s ease-in;
+
+  &__icon-left {
+    padding-inline: var(--_padding);
+  }
+
+  &__content {
+    padding-right: 4rem;
+  }
+
+  &__title {
+    font-family: $ff-secondary;
+    font-size: 2rem;
+  }
+
+  &__message {
+    font-size: $fs-400;
+  }
+
+  &__icon-right {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    right: -1.5rem;
+    top: 50%;
+    translate: 0 -50%;
+  }
+
+  &__title--pending {
+    color: $clr-primary-blue-800;
+  }
+
+  &__icon-right--pending path,
+  &__icon-left--pending path {
+    fill: $clr-primary-blue-800;
+  }
+
+  &__title--failure {
+    color: $clr-danger-300;
+  }
+
+  &__icon-right--failure path,
+  &__icon-left--failure path {
+    fill: $clr-danger-300;
+  }
+
+  &__title--success {
+    color: $clr-primary-cyan-400;
+  }
+
+  &__icon-right--success path,
+  &__icon-left--success path {
+    fill: $clr-primary-cyan-400;
+  }
+}
+
+@keyframes animateNotification {
+  0%,
+  100% {
+    translate: calc(100% + 5rem) 0;
+  }
+
+  45%,
+  95% {
+    translate: -2.5rem 0;
+  }
+
+  50% {
+    translate: 0;
+  }
+}

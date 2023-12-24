@@ -1,14 +1,13 @@
 import { FC } from "react";
 import classes from "./PrimaryButton.module.scss";
-import { Link } from "react-router-dom";
 
 type Button = {
   tag: {
     tagName: string;
     href?: string;
   };
-  children: JSX.Element | string;
-  disabled?: string;
+  children: React.ReactNode;
+  disabled?: boolean;
 };
 
 const PrimaryButton: FC<Button> = (props) => {
